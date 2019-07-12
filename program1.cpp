@@ -64,6 +64,9 @@ int main(){
 		}else if(numType == 'D'){
 			output = changeBases(number, 10, 2);
 			outputType = 'B';
+		}else if(numType == 'O'){ //for fun, I added the ability to convert from Octal to Decimal
+			output = changeBases(number, 8, 10);
+			outputType = 'D';
 		}else{
 			cout << "Unsupported number type" << endl;
 		}
